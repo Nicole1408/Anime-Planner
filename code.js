@@ -54,3 +54,37 @@ function checkCompletion(){
     }
     showYayImage();
 }
+
+function addTask(){
+    document.getElementById("weirdForm").style.visibility = "visible"
+}
+
+function cancel(){
+    document.getElementById("newTask").value = ""
+    document.getElementById("day").value = ""
+    document.getElementById("weirdForm").style.visibility = "hidden"
+}
+
+function ok(){
+    var task = document.getElementById("newTask").value;
+    var day = parseInt(document.getElementById("day").value);
+    if(!Number.isInteger(day) || day < 1 || day > 7){
+        cancel();
+        return;
+    }
+    var form = document.getElementById(day + "Form");
+    var input = document.createElement("input")
+    input.type = "checkbox"
+    input.name = "Task"
+    input.classList.add('checkbox', day)
+    input.addEventListener('click', () => {checkCheckboxes(day);});
+    var label = document.createElement("label")
+    label.htmlFor = "Task"
+    label.innerHTML = task
+    var div = document.createElement("div")
+    form.appendChild(div);
+    div.appendChild(input);
+    div.appendChild(label);
+    checkCheckboxes(day)
+    cancel()
+}
