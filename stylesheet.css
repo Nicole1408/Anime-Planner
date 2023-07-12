@@ -1,0 +1,26 @@
+body{
+    background-color: magenta;
+}
+
+h1{
+    color: cyan;
+}
+
+h3{
+    color: lime;
+}
+
+#general{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form{
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
