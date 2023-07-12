@@ -24,3 +24,9 @@ h3{
     justify-content: space-around;
     align-items: flex-start;
 }
+
+.button{
+    display: flex;
+    color: magenta;
+    background-color: lime;
+}
