@@ -22,6 +22,7 @@
             <img src="bsd_planner_akutagawa.jpg" alt="Nothing Yet" id="nothingImage1" height="150">
             <br>
             <img src="bsd_planner_dazai.jpg" alt="Good Job!!" id="goodJobImage1" height="150" style="visibility: hidden;">
+            <button class="button" onclick="addTask()">Add task</button>
         </div>
         <div id="tuesday" class="day">
             <h3>Tuesday</h3>
@@ -34,6 +35,7 @@
             <img src="bsd_planner_akutagawa.jpg" alt="Nothing Yet" id="nothingImage2" height="150">
             <br>
             <img src="bsd_planner_dazai.jpg" alt="Good Job!!" id="goodJobImage2" height="150" style="visibility: hidden;">
+            <button class="button" onclick="addTask()">Add task</button>
         </div>
         <div id="wednesday" class="day">
             <h3>Wednesday</h3>
@@ -46,6 +48,7 @@
             <img src="bsd_planner_akutagawa.jpg" alt="Nothing Yet" id="nothingImage3" height="150">
             <br>
             <img src="bsd_planner_dazai.jpg" alt="Good Job!!" id="goodJobImage3" height="150" style="visibility: hidden;">
+            <button class="button" onclick="addTask()">Add task</button>
         </div>
         <div id="thursday" class="day">
             <h3>Thursday</h3>
@@ -66,6 +69,7 @@
             <img src="bsd_planner_akutagawa.jpg" alt="Nothing Yet" id="nothingImage4" height="150">
             <br>
             <img src="bsd_planner_dazai.jpg" alt="Good Job!!" id="goodJobImage4" height="150" style="visibility: hidden;">
+            <button class="button" onclick="addTask()">Add task</button>
         </div>
         <div id="friday" class="day">
             <h3>Friday</h3>
@@ -82,6 +86,7 @@
             <img src="bsd_planner_akutagawa.jpg" alt="Nothing Yet" id="nothingImage5" height="150">
             <br>
             <img src="bsd_planner_dazai.jpg" alt="Good Job!!" id="goodJobImage5" height="150" style="visibility: hidden;">
+            <button class="button" onclick="addTask()">Add task</button>
         </div>
         <div id="saturday" class="day">
             <h3>Saturday</h3>
@@ -98,6 +103,7 @@
             <img src="bsd_planner_akutagawa.jpg" alt="Nothing Yet" id="nothingImage6" height="150">
             <br>
             <img src="bsd_planner_dazai.jpg" alt="Good Job!!" id="goodJobImage6" height="150" style="visibility: hidden;">
+            <button class="button" onclick="addTask()">Add task</button>
         </div>
         <div id="sunday" class="day">
             <h3>Sunday</h3>
@@ -114,9 +120,19 @@
             <img src="bsd_planner_akutagawa.jpg" alt="Nothing Yet" id="nothingImage7" height="150">
             <br>
             <img src="bsd_planner_dazai.jpg" alt="Good Job!!" id="goodJobImage7" height="150" style="visibility: hidden;">
+            <button class="button" onclick="addTask()">Add task</button>
         </div>
         <br>
         <img src="bsd_planner_chuuya.jpg" alt="YAAAAAY" id="yayImage" height="250" style="visibility: hidden;">
+        <br>
+        <div id="weirdForm" style="visibility: hidden;">
+            <input type="text" name="New Task" id="newTask">
+            <label for="New Task" id="labelTask">New Task</label>
+            <input type="text" name="Day" id="day">
+            <label for="Day" id="labelDay">Day</label>
+            <button id="btnOk" onclick="ok()">ok</button>
+            <button id="btnCancel" onclick="cancel()">cancel</button>
+        </div>
     </div>
 </body>
 </html>
